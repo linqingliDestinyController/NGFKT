@@ -14,8 +14,18 @@ Faculty of Artificial Intelligence in Education, Central China Normal University
 We have placed the preprocessed Eedi datasets in the "datasets" folder. When considering the limitations of the github and the large size of the ASSIST2012 datasets, we placed the ASSIST2012 in our google drive referring to the links[<a href="https://drive.google.com/drive/folders/1UO2vVQbrADtX3pybxb4MSMIuGpSEt-A3?usp=share_link">Click</a>]
 
 If you want to process the datasets by yourself, you can reference the corresponding links to download the datasets.</br>
-1. ASSIS2012: <a href="https://sites.google.com/site/assistmentsdata/datasets/2012-13-school-data-with-affect">Download</a>
+1. ASSIST2012: <a href="https://sites.google.com/site/assistmentsdata/datasets/2012-13-school-data-with-affect">Download</a>
 2. Eedi: <a href="https://eedi.com/projects/neurips-education-challenge">Download</a>
+
+The description of the "Eedi" datasets and the "Assist2012" dataset can referece the following table.
+|        |   Eedi | ASSIST2012   |
+|  ----  | ----  | ---- |
+| Number of Records   | 4193631 | 233767 |
+| Number of students  | 39364 | 2064 |
+| Number of questions  | 59761 | 948 |
+| Average record/student  | 107 | 113 |
+
+
 
 ## Environment Requirement
 python == 3.6.5</br>
