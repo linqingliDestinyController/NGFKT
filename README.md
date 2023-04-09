@@ -16,4 +16,5 @@ numpy == 1.15.2</br>
 
 ## Examples to run the model
 ### Eedi dataset
+ Command:</br>
 <code data-enlighter-language="raw" class="EnlighterJSRAW">python train.py</code>
