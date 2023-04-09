@@ -298,7 +298,7 @@ if __name__ == "__main__":
     parser.add_argument('--beta', default=0.1, type=float)
     args = parser.parse_args(args=[])
     print("Start to load data",flush = True)
-    data = np.load('./datasets/train_Assist.npz')
+    data = np.load('./datasets/train_assist.npz')
     y, skill, problem, timestamp, real_len = data['y'], data['skill'], data['problem'], data['time'] , data['real_len']
     skill_num, pro_num = data['skill_num'], data['problem_num']
     q_matrix = get_q_matrix(args.embed_size)
