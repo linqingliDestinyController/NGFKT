@@ -173,9 +173,10 @@ def computeRePos(time_seq, time_span):
     # time_matrix[time_matrix>time_span] = time_span
     time_matrix = time_matrix.reshape((batch_size,size,size))
     return (time_matrix)
+  
 def get_corr_data2(pro_num):
     pro_pro_dense = np.zeros((pro_num, pro_num))
-    pro_pro_ = open('./datasets/ednet_corr')
+    pro_pro_ = open('./datasets/exercise_matrix')
     for i in pro_pro_:
         j = i.strip().split(',')
         pro_pro_dense[int(j[0])][int(j[1])] += int(float(j[2]))
@@ -297,7 +298,7 @@ if __name__ == "__main__":
     parser.add_argument('--beta', default=0.1, type=float)
     args = parser.parse_args(args=[])
     print("Start to load data",flush = True)
-    data = np.load('./datasets/ednet.npz')
+    data = np.load('./datasets/train_Assist.npz')
     y, skill, problem, timestamp, real_len = data['y'], data['skill'], data['problem'], data['time'] , data['real_len']
     skill_num, pro_num = data['skill_num'], data['problem_num']
     q_matrix = get_q_matrix(args.embed_size)
