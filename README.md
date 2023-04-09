@@ -15,6 +15,10 @@ tensorflow == 1.15.0</br>
 numpy == 1.15.2</br>
 
 ## Examples to run the model
+When considering the size and format of the datasets, we apply the two file to run the "Eedi" dataset and the "ASSIST2012" dataset respectively.
 ### Eedi dataset
  Command:</br>
-<code data-enlighter-language="raw" class="EnlighterJSRAW">python train.py</code>
+<code data-enlighter-language="raw" class="EnlighterJSRAW">python train_Eedi.py</code>
+### ASSIST2012 dataset
+ Command:</br>
+<code data-enlighter-language="raw" class="EnlighterJSRAW">python train_Assist.py</code>
